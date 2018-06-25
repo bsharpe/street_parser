@@ -399,7 +399,7 @@ module StreetParser
 
 
       def to_s(format = :default)
-        s = ""
+        s = String.new
         case format
         when :line1
           s << line1(s)
