@@ -306,7 +306,7 @@ module StreetParser
             input[k] = input[k].split.map(&:capitalize).join(' ') if input[k]
           end
 
-          return StreetAddress::US::Address.new( input )
+          return StreetParser::US::Address.new( input )
         end
     end
 
@@ -348,11 +348,11 @@ module StreetParser
 
 
       def state_fips
-        StreetAddress::US::FIPS_STATES[state]
+        StreetParser::US::FIPS_STATES[state]
       end
 
       def state_name
-        name = StreetAddress::US::STATE_NAMES[state] && name.capitalize
+        name = StreetParser::US::STATE_NAMES[state] && name.capitalize
       end
 
       def intersection?

@@ -11,8 +11,8 @@ Gem::Specification.new do |spec|
   spec.email         = ["bsharpe@gmail.com"]
 
   spec.summary       = %q{Parse Addresses into substituent parts. This gem includes US only.}
-  spec.description   = %q{StreetAddress::US allows you to send any string to parse and if the string is a US address returns an object of the address broken into it's substituent parts.
-A port of Geo::StreetAddress::US by Schuyler D. Erle and Tim Bunce.}
+  spec.description   = %q{StreetParser::US allows you to send any string to parse and if the string is a US address returns an object of the address broken into it's substituent parts.
+A port of Geo::StreetParser::US by Schuyler D. Erle and Tim Bunce.}
   spec.homepage      = "https://github.com/bsharpe/street_parser"
   spec.license       = "MIT"
 
